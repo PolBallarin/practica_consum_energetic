@@ -87,15 +87,34 @@ El dataset original conté dades **horàries**, però per a la regressió lineal
 ### 🧠 Preguntes de reflexió
 
 1. Quin signe té la pendent (w)? Què ens diu sobre la relació entre temperatura i consum?
+- Es negativa, w = -1763.73
+- Per cada grau que augmenta la temperatura, el consum disminueix en 1,764 MWh
+- Amb R² = 0.031 (només 3%), aquesta pendent no representa bé la realitat
+- El model polinòmic mostra que en realitat hi ha una forma de U amb mínima a 20.3°C
+
 2. Quin seria el consum previst si la temperatura fos 0 °C? És raonable?
+- Consum = -1763.73 × 0 + 737163.45 = 737,163 MWh
+- Aquest valor es raonable per a 0ºC, molt fred = molta calefaccio, pero amb una R2 tan baixa... 
+
 3. El model lineal explica bé el comportament real de les dades?
+- No, el model lineal es dolent, tant la R2 com el RMSE son molt dolents.
+
 4. Què podries fer per millorar el model?
+- El model polinomic es una opció pero segueix tenint una R2 molt molt baixa.
+- Una opcio que podria funcionar es la de afegir moltes mes variables.
+
 5. Quins altres factors poden afectar el consum elèctric (a part de la temperatura)?
+- Els nostres resultats demostren que la temperatura explica molt poc, podriam comtemplar el calendari (findes vs dias laborables, vacances etc), activitats economiques i hores de llum solar.
+
 6. En quins contextos seria inadequat aplicar directament aquest model?
+- Gairabe sempre.
+
 7. Quines implicacions ètiques o de privacitat podria tenir analitzar dades de consum?
+
 
 ---
 
 ### 📘 Conclusions
 
-* Escriu aquí les conclusions que pots extreure
+* Escriu aquí les conclusions que pots extreure:
+- Aquest model ha demostrar que la relacio entre temperatura i consum electric a     Espanya es molt mes complexa del que un model lineal simple pot capturar.
